@@ -11,8 +11,8 @@ public abstract class Conta implements IConta {
     protected List<String> historico;
 
     public Conta(Agencia agencia, double saldo) {
-        this.agencia = agencia;
         this.conta = CONTA_SEQUENCIAL++;
+        this.agencia = agencia;
         this.saldo = saldo;
     }
 
