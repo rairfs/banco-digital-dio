@@ -1,10 +1,11 @@
 package one.digitalinnovation.banco.entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Cliente {
     private String nome;
-    private List<Conta> contas;
+    private List<Conta> contas = new ArrayList<>();
 
     public Cliente(String nome) {
         this.nome = nome;

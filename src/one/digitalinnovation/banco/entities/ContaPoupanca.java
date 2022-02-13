@@ -1,11 +1,13 @@
 package one.digitalinnovation.banco.entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ContaPoupanca extends Conta{
 
     public ContaPoupanca(Agencia agencia, double saldo) {
         super(agencia, saldo);
+        super.historico = new ArrayList<>();
     }
 
 

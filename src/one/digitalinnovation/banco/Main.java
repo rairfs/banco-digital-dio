@@ -11,9 +11,11 @@ public class Main {
     public static void main(String[] args) {
         Banco itau = new Banco("Itau");
         Agencia aracaju = new Agencia("AG-ARACAJU", "Av. Desembargador M.");
+        itau.adicionaAgencia(aracaju);
         Conta clientePoupanca = new ContaPoupanca(aracaju, 100.00);
         Cliente clienteAracaju = new Cliente("Jose");
         clienteAracaju.adicionaContas(clientePoupanca);
         itau.adicionaCliente(clienteAracaju);
+        itau.listaTodasAgencias();
     }
 }

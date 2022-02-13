@@ -1,11 +1,13 @@
 package one.digitalinnovation.banco.entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ContaCorrente extends Conta{
 
     public ContaCorrente(Agencia agencia, double saldo) {
         super(agencia, saldo);
+        super.historico = new ArrayList<>();
     }
 
     @Override

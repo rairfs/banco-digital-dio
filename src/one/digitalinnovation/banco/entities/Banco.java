@@ -1,11 +1,12 @@
 package one.digitalinnovation.banco.entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Banco {
     private String nome;
-    private List<Agencia> listaAgencias;
-    private List<Cliente> listaClientes;
+    private List<Agencia> listaAgencias = new ArrayList<>();
+    private List<Cliente> listaClientes = new ArrayList<>();
 
     public Banco() {
     }
@@ -31,6 +32,12 @@ public class Banco {
     public void listaTodasAgencias(){
         for (Agencia ag : listaAgencias){
             System.out.println(ag);
+        }
+    }
+
+    public void listaClientes(){
+        for (Cliente cli : listaClientes){
+            System.out.println(cli);
         }
     }
 
